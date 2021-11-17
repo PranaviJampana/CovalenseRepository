@@ -10,5 +10,6 @@ import com.cov.beans.Employee;
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	List<Employee> findByDepartment(Department department);
 	
+	
 
 }
