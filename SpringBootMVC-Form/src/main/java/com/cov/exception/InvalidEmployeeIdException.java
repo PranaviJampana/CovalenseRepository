@@ -16,6 +16,7 @@ public class InvalidEmployeeIdException extends Exception {
 		super(message);
 		// TODO Auto-generated constructor stub
 	}
+	
 
 	public InvalidEmployeeIdException(Throwable cause) {
 		super(cause);

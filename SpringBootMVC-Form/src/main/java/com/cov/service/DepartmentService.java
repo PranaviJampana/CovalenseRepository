@@ -13,11 +13,13 @@ import com.cov.exception.InvalidDepartmentIdException;
 import com.cov.repo.DepartmentRepository;
 
 
+
 @Service
 public class DepartmentService {
 	
 	@Autowired
 	DepartmentRepository departmentRepository;
+	
 
 	public List<Department> findAll() {
 // List<Employee> employee=new ArrayList<Employee>();

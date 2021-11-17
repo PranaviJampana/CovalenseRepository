@@ -12,6 +12,7 @@ public class InvalidDepartmentIdException extends Exception {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 	public InvalidDepartmentIdException(String message) {
 		super(message);
 		// TODO Auto-generated constructor stub
