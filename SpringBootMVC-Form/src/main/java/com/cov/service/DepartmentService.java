@@ -55,6 +55,7 @@ public class DepartmentService {
 			throw new InvalidDepartmentIdException("Department Id " + id + "not existing in repository");
 		}
 		Department department = deptOptional.get();
+		
 		departmentRepository.deleteById(id);
 		return department;
 	}
