@@ -16,16 +16,19 @@ import javax.persistence.OneToMany;
 public class Department {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
+	int id;
 	int deptno;
 	String name;
-	@OneToMany(mappedBy = "department",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
-	private List<Employee>employees;
+	@OneToMany(mappedBy = "deptno", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+	private List<Employee> employees;
+
 	public Department() {
-		
+
 	}
-	
-	public Department(int deptno, String name) {
+
+	public Department(int id, int deptno, String name) {
 		super();
+		this.id = id;
 		this.deptno = deptno;
 		this.name = name;
 	}
@@ -39,9 +42,17 @@ public class Department {
 		if (getClass() != obj.getClass())
 			return false;
 		Department other = (Department) obj;
-		return deptno == other.deptno && Objects.equals(name, other.name);
+		return deptno == other.deptno && id == other.id && Objects.equals(name, other.name);
 	}
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	public int getDeptno() {
 		return deptno;
 	}
@@ -62,10 +73,5 @@ public class Department {
 	public String toString() {
 		return "Department [deptno=" + deptno + ", name=" + name + "]";
 	}
-
-	
-	
-	
-	
 
 }
