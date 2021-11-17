@@ -1,6 +1,5 @@
 package com.cov.service;
 
-
 import java.util.List;
 import java.util.Optional;
 
@@ -55,6 +54,5 @@ public class EmployeeService {
 		employeeRepository.deleteById(id);
 		return employee;
 	}
-	
 
 }

@@ -20,7 +20,7 @@ public class Employee {
 	String address;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "deptId", nullable = false)
+	@JoinColumn(name = "dept_id", nullable = false)
 	private Department department;
 
 	public Employee() {
@@ -74,7 +74,5 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-
-	
 
 }
