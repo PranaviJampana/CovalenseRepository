@@ -15,6 +15,7 @@ import com.cov.repo.DepartmentRepository;
 
 @Service
 public class DepartmentService {
+	
 	@Autowired
 	DepartmentRepository departmentRepository;
 
