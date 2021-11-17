@@ -1,7 +1,5 @@
 package com.cov.beans;
 
-import java.util.Objects;
-
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -15,43 +13,25 @@ public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	int id;
-	int deptno;
-
-	String address;
+	String name;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-	@JoinColumn(name = "dept_id", nullable = false)
-	private Department department;
+//@JoinColumn(name = "dept_id", nullable = false)
+	Department department;
 
-	public Employee() {
-
-	}
-
-	public Employee(int id, int deptno, String address) {
+	public Employee(int id, String name, Department department) {
 		super();
 		this.id = id;
-		this.deptno = deptno;
-		this.address = address;
+		this.name = name;
+		this.department = department;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		Employee other = (Employee) obj;
-		return Objects.equals(address, other.address) && deptno == other.deptno && id == other.id;
+	public Employee() {
+		super();
+// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public String toString() {
-		return "Employee [id=" + id + ", address=" + address + "]";
-	}
-
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
@@ -59,20 +39,25 @@ public class Employee {
 		this.id = id;
 	}
 
-	public long getDeptno() {
-		return deptno;
+	public String getName() {
+		return name;
 	}
 
-	public void setDeptno(int deptno) {
-		this.deptno = deptno;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public String getAddress() {
-		return address;
+	public Department getDepartment() {
+		return department;
 	}
 
-	public void setAddress(String address) {
-		this.address = address;
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", department=" + department + "]";
 	}
 
 }

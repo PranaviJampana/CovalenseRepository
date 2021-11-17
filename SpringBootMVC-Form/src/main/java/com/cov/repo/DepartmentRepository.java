@@ -7,7 +7,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.cov.beans.Department;
 
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
-
-	Optional<Department> findByDeptno(Integer deptno);
+	Optional<Department> findById(int id);
 
 }
