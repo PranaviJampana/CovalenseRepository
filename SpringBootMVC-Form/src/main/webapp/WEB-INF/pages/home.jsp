@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h2>welcome to employee registration page</h2>
-	<a href="regemp">Employee Registration</a><br><br>
-	<a href="getEmp">Employee details</a>
+	<a href="regemp">Employee</a><br><br>
+	<a href="getEmp">Department</a>
 	
 
 </body>
