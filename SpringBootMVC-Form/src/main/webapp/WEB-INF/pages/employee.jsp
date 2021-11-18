@@ -22,15 +22,13 @@
 		<form:label path="department">Department</form:label>
 		<label for="Departments">Choose a Department</label>
 		<select name="departments" id="departments">
-			<option value="1">java</option>
-			<option value="2">c</option>
+			<option value="0">Select</option>
+
+			<option value="1">sales</option>
+			<option value="2">production</option>
 		</select>
 		<br>
 		<br>
-
-
-
-
 		<input type="submit" value="Register">
 	</form:form>
 	<h2>Employee Details</h2>
@@ -56,13 +54,9 @@
 		}
 		%>
 
-
-
-
-
 	</table>
-	
-	
+
+
 	<br>
 	<a href="/">Home</a>
 </body>

@@ -5,22 +5,18 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>editdep</title>
+<title>editdept</title>
 </head>
 <body>
 	<h1>Update Employee Details</h1>
 	<form:form action="updateDep" modelAttribute="depToEdit">
-
-
-
-
 		<form:label path="id">ID</form:label>
 		<form:input path="id" readonly="true" />
 		<br>
 		<br>
 		<form:label path="name">Name</form:label>
 		<form:input path="name" />
-		
+
 		<br>
 		<br>
 		<input type="submit" value="Update">

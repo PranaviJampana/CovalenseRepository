@@ -10,10 +10,6 @@
 <body>
 	<h1>Update Employee Details</h1>
 	<form:form action="updateEmp" modelAttribute="empToEdit">
-
-
-
-
 		<form:label path="id">ID</form:label>
 		<form:input path="id" readonly="true" />
 		<br>
@@ -22,11 +18,6 @@
 		<form:input path="name" />
 		<br>
 		<br>
-
-
-
-
-
 		<form:label path="deptno">DeptNo</form:label>
 		<form:input path="deptno" />
 		<br>
