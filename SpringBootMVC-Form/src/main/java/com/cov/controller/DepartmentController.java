@@ -48,7 +48,7 @@ public class DepartmentController {
 			throws InvalidDepartmentIdException {
 		departmentService.update(department);
 		ModelAndView modelAndView = new ModelAndView("redirect:" + "getDepts");
-		System.out.println("Employee Updated successfully with id : " + department.getId());
+		
 		return modelAndView;
 	}
 

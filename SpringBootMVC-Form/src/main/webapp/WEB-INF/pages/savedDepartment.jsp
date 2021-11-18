@@ -4,20 +4,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>home page</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h2>welcome to employee registration page</h2>
-
-
-
-	<a href="employee">List of Employees</a>
+	<h2>Department Details</h2>
+	Id:${ department.id }
+	<br>
+	<br> Name:${ department.name }
 	<br>
 	<br>
-	<a href="department">List of Departments</a>
-
-
-
-
+	<a href="/">Home</a>
+	<a href="getDepts">ShowAllDepartment</a>
 </body>
 </html>

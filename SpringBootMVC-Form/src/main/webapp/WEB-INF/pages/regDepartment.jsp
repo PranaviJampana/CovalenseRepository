@@ -5,21 +5,24 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>editdept</title>
+<title>Department Registration Page</title>
 </head>
 <body>
-	<h1>Update Employee Details</h1>
-	<form:form action="updateDep" modelAttribute="depToEdit">
-		<form:label path="id">ID</form:label>
-		<form:input path="id" readonly="true" />
-		<br>
-		<br>
+	<h2>Department Registration</h2>
+	<form:form action="regdept" method="post" modelAttribute="department">
 		<form:label path="name">Name</form:label>
 		<form:input path="name" />
-
 		<br>
 		<br>
-		<input type="submit" value="Update">
+		<input type="submit" value="Register">
 	</form:form>
+	<br>
+	<br>
+	<a href="getDepts">Show Department</a>
+	<br>
+	<br>
+	<a href="/">Home</a>
+	<br>
+	<br>
 </body>
 </html>

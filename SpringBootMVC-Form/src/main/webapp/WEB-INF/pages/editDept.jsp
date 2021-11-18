@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>editemp</title>
+<title>Department editing page</title>
 </head>
 <body>
-	<h1>Update Employee Details</h1>
-	<form:form action="updateEmp" modelAttribute="empToEdit">
+	<h2>Update Department Details</h2>
+	<form:form action="updateDept" modelAttribute="deptToEdit">
 		<form:label path="id">ID</form:label>
 		<form:input path="id" readonly="true" />
 		<br>
@@ -18,11 +18,12 @@
 		<form:input path="name" />
 		<br>
 		<br>
-		<form:label path="deptno">DeptNo</form:label>
-		<form:input path="deptno" />
-		<br>
-		<br>
-		<input type="submit" value="Update">
+      <input type="submit" value="Update">
 	</form:form>
+	<br>
+	<br>
+	<a href="/">Home</a>
+	<br>
+	<br>
 </body>
 </html>

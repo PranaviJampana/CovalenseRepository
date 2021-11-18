@@ -7,19 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.cov.beans.Department;
-
 import com.cov.exception.InvalidDepartmentIdException;
-
 import com.cov.repo.DepartmentRepository;
-
-
 
 @Service
 public class DepartmentService {
-	
 	@Autowired
 	DepartmentRepository departmentRepository;
-	
 
 	public List<Department> findAll() {
 // List<Employee> employee=new ArrayList<Employee>();
@@ -58,7 +52,6 @@ public class DepartmentService {
 			throw new InvalidDepartmentIdException("Department Id " + id + "not existing in repository");
 		}
 		Department department = deptOptional.get();
-		
 		departmentRepository.deleteById(id);
 		return department;
 	}

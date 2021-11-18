@@ -32,8 +32,6 @@ public class EmployeeController {
 
 	@RequestMapping(value = "regemp", method = RequestMethod.POST)
 	public ModelAndView saveEmployee(@ModelAttribute("employee") Employee emp) throws InvalidEmployeeIdException {
-		System.out.println("Trying to insert employee : " + emp);
-		System.out.println("Department : " + emp.getDepartment());
 		ModelAndView modelAndView = new ModelAndView("showEmployee");
 		employeeService.save(emp);
 		modelAndView.addObject("emps", employeeService.findAll());
@@ -60,7 +58,7 @@ public class EmployeeController {
 			throws InvalidEmployeeIdException {
 		employeeService.update(employee);
 		ModelAndView modelAndView = new ModelAndView("redirect:" + "getemps");
-		System.out.println("Employee Updated successfully with id : " + employee.getId());
+
 		return modelAndView;
 	}
 
