@@ -5,34 +5,33 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>RegEmployee</title>
+<title>editemp</title>
 </head>
 <body>
-	<h2>Employee Registration</h2>
+	<h1>Update Employee Details</h1>
+	<form:form action="updateEmp" modelAttribute="empToEdit">
 
 
 
-	<form:form action="regemp" method="post" modelAttribute="employee">
+
 		<form:label path="id">ID</form:label>
-		<form:input path="id" />
+		<form:input path="id" readonly="true" />
 		<br>
 		<br>
 		<form:label path="name">Name</form:label>
 		<form:input path="name" />
 		<br>
 		<br>
+
+
+
+
+
 		<form:label path="deptno">DeptNo</form:label>
 		<form:input path="deptno" />
 		<br>
 		<br>
-		<input type="submit" value="Register">
+		<input type="submit" value="Update">
 	</form:form>
-	<!--<form action="regemp" method="post">
-Id:<input type="text" name="id"><br>
-<br> Name:<input type="text" name="name"><br>
-<br> Deptno:<input type="text" name="deptno"><br>
-<br> <input type="submit" name="Register"> <input
-type="reset" name="Cancel">
-</form>-->
 </body>
 </html>

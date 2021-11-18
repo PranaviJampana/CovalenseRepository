@@ -12,19 +12,17 @@ import com.cov.beans.Employee;
 import com.cov.service.DepartmentService;
 import com.cov.service.EmployeeService;
 
-
 @SpringBootApplication
 public class SpringBootMvcFormApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext cntx = SpringApplication.run(SpringBootMvcFormApplication.class, args);
-		Department department1 = new Department(1, "python");
+		Department department1 = new Department(1, "java");
 		Department department2 = new Department(2, "c");
 		Employee employee1 = new Employee(101, "Pranavi", department1);
 		Employee employee2 = new Employee(102, "jahnavi", department1);
 		Employee employee3 = new Employee(103, "jyothi", department2);
 		Employee employee4 = new Employee(104, "gopi", department2);
-		
 
 		List<Employee> employees1 = new ArrayList<>();
 		List<Employee> employees2 = new ArrayList<>();

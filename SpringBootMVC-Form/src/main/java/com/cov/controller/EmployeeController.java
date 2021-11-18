@@ -20,7 +20,7 @@ public class EmployeeController {
 
 	@RequestMapping(value = "regemp", method = RequestMethod.GET)
 	public ModelAndView newEmployee() {
-		ModelAndView modelAndView = new ModelAndView("regEmployee", "employee", new Employee());
+		ModelAndView modelAndView = new ModelAndView("employee", "employee", new Employee());
 		return modelAndView;
 
 	}
@@ -35,7 +35,7 @@ public class EmployeeController {
 
 	@RequestMapping("getEmp")
 	public ModelAndView findEmployee(Employee employee) {
-		ModelAndView modelAndView = new ModelAndView("showEmployees", "emps", employeeService.findAll());
+		ModelAndView modelAndView = new ModelAndView("employee", "emps", employeeService.findAll());
 
 		return modelAndView;
 

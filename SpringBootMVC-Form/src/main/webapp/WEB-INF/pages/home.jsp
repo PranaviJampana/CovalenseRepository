@@ -8,9 +8,10 @@
 </head>
 <body>
 	<h2>welcome to employee registration page</h2>
-	<a href="regemp">Employee</a><br><br>
-	<a href="getEmp">Department</a>
 	
+<a href="getEmp">List of Employees</a><br>
+
+<a href="getDep">List of Departments</a>
 
 </body>
 </html>
