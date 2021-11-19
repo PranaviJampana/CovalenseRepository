@@ -42,11 +42,6 @@
 				%>
 			</form:select>
 		</center>
-
-
-
-
-
 		<center>
 			<input type="submit" value="Update">
 		</center>

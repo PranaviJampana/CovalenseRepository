@@ -32,7 +32,7 @@ public class EmployeeController {
 
 	@RequestMapping(value = "regemp", method = RequestMethod.POST)
 	public ModelAndView saveEmployee(@ModelAttribute("employee") Employee emp) throws InvalidEmployeeIdException {
-		ModelAndView modelAndView = new ModelAndView("showEmployee");
+		ModelAndView modelAndView = new ModelAndView("employee");
 		employeeService.save(emp);
 		modelAndView.addObject("emps", employeeService.findAll());
 		return modelAndView;
@@ -40,7 +40,7 @@ public class EmployeeController {
 
 	@RequestMapping(value = "getemps", method = RequestMethod.GET)
 	public ModelAndView findEmployeeAll() throws InvalidEmployeeIdException {
-		ModelAndView modelAndView = new ModelAndView("showEmployee");
+		ModelAndView modelAndView = new ModelAndView("employee");
 		List<Employee> emps = employeeService.findAll();
 		modelAndView.addObject("emps", emps);
 		return modelAndView;
