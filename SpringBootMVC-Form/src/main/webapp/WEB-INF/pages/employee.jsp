@@ -7,13 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<a href="getemps">Show All Employee</a>
+	<center><a href="getemps">Show All Employee</a></center>
 	<br>
 	<br>
-	<a href="regemp">Register Employees</a>
+	<center><a href="regemp">Register Employees</a></center>
 	<br>
 	<br>
-	<a href="/">Home</a>
+	<center><a href="/">Home</a></center>
 	<br>
 	<br>
 </body>

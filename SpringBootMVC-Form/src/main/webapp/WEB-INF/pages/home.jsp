@@ -6,16 +6,22 @@
 <meta charset="ISO-8859-1">
 <title>home page</title>
 </head>
-<body>
-	<h2>welcome to employee registration page</h2>
+<body  >
+
+	<center>
+		<h2>welcome to employee registration page</h2>
+	</center>
 
 
 
-	<a href="employee">List of Employees</a>
+	<center>
+		<a href="employee">List of Employees</a>
+	</center>
 	<br>
 	<br>
-	<a href="department">List of Departments</a>
-
+	<center>
+		<a href="department">List of Departments</a>
+	</center>
 
 
 

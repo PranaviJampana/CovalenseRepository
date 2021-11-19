@@ -7,15 +7,15 @@
 <title>Department Page</title>
 </head>
 <body>
-	<a href="getDepts">Show Department</a>
+	<center><a href="getDepts">Show Department</a></center>
 	<br>
 	<br>
 
-	<a href="regdept">Register Department</a>
+	<center><a href="regdept">Register Department</a></center>
 	<br>
 	<br>
 
-	<a href="/">Home</a>
+	<center><a href="/">Home</a></center>
 	<br>
 	<br>
 

@@ -9,7 +9,10 @@
 	<h2>Employee Details</h2>
 	Id:${ employee.id }
 	<br>
-	<br> Name:${ employee.name }
+	<br> 
+	Name:${ employee.name }
+	<br>
+	Department:${employee.department}
 	<br>
 	<br>
 	<a href="/">Home</a>
