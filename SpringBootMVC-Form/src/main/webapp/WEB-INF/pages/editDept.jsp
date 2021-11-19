@@ -10,15 +10,15 @@
 <body>
 	<h2>Update Department Details</h2>
 	<form:form action="updateDept" modelAttribute="deptToEdit">
-		<form:label path="id">ID</form:label>
-		<form:input path="id" readonly="true" />
+		<center><form:label path="id">ID</form:label>
+		<form:input path="id" readonly="true" /></center>
 		<br>
 		<br>
-		<form:label path="name">Name</form:label>
-		<form:input path="name" />
+		<center><form:label path="name">Name</form:label>
+		<form:input path="name" /></center>
 		<br>
 		<br>
-      <input type="submit" value="Update">
+      <center><input type="submit" value="Update"></center>
 	</form:form>
 	<br>
 	<br>

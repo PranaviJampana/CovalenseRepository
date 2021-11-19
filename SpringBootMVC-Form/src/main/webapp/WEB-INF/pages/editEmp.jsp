@@ -12,40 +12,44 @@
 </head>
 <body>
 
-
-
-
-
 	<form:form action="updateEmp" modelAttribute="empToEdit">
-		<form:label path="id">ID</form:label>
-		<form:input path="id" readonly="true" />
+		<center>
+			<form:label path="id">Employee ID</form:label>
+			<form:input path="id" readonly="true" />
+		</center>
 		<br>
 		<br>
-		<form:label path="name">Name</form:label>
-		<form:input path="name" />
+		<center>
+			<form:label path="name">Employee Name</form:label>
+			<form:input path="name" />
+		</center>
 		<br>
 		<br>
-		<%
-		DepartmentService departmentService = (DepartmentService) request.getAttribute("departmentService");
-		List<Department> departments = departmentService.findAll();
-		%>
-		<form:label path="department">Department</form:label>
-		<form:select path="department">
-			<form:option value="0">--Select--</form:option>
+		<center>
 			<%
-			for (Department department : departments) {
+			DepartmentService departmentService = (DepartmentService) request.getAttribute("departmentService");
+			List<Department> departments = departmentService.findAll();
 			%>
-			<form:option value="<%= department %>"><%=department.getName()%></form:option>
-			<%
-			}
-			%>
-		</form:select>
+			<form:label path="department">Department</form:label>
+			<form:select path="department">
+				<form:option value="0">--Select--</form:option>
+				<%
+				for (Department department : departments) {
+				%>
+				<form:option value="<%= department %>"><%=department.getName()%></form:option>
+				<%
+				}
+				%>
+			</form:select>
+		</center>
 
 
 
 
 
-		<input type="submit" value="Update">
+		<center>
+			<input type="submit" value="Update">
+		</center>
 	</form:form>
 	<br>
 	<br>
