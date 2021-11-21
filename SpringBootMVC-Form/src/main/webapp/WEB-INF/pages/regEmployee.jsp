@@ -35,10 +35,6 @@
 			}
 			%>
 		</form:select>
-
-
-
-
 		<input type="submit" value="Register">
 	</form:form>
 	<br>
@@ -46,12 +42,6 @@
 	<a href="/">Home</a>
 	<br>
 	<br>
-
-
-
-
-
-
 
 </body>
 </html>

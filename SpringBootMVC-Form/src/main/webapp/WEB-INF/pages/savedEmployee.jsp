@@ -12,8 +12,6 @@
 	<br> 
 	Name:${ employee.name }
 	<br>
-	Department:${employee.department}
-	<br>
 	<br>
 	<a href="/">Home</a>
 	<a href="getEmps">ShowAllEmployee</a>
