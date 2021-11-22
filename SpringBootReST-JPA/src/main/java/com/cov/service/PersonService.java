@@ -18,43 +18,58 @@ public class PersonService {
 	PersonRepository personRepository;
 
 	public List<Person> findAll() {
+		logger.info("finding all persons");
 		return personRepository.findAll();
 	}
 
 	public Person findById(int id) throws InvalidPersonIdException {
-
-		logger.info("Finding person with ID : " + id);
+		logger.info("finding person with id: " + id);
 		Optional<Person> personOptional = personRepository.findById(id);
 		if (!personOptional.isPresent()) {
-			logger.debug("Person not found with ID : " + id);
-			InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person ID not found");
+			
+			InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person id not found");
 			logger.warn(invalidPersonIdException);
-			throw new InvalidPersonIdException();
+
+			throw  invalidPersonIdException;
+
 		}
 		Person person = personOptional.get();
-		logger.info("Person found with id " + id + " is " + person.getFirstname() + " " + person.getLastname());
+		logger.info("person found with id " + id + "is" + person.getFirstname() + " " + person.getLastname());
 		return person;
 	}
 
 	public Person insert(Person person) {
+		logger.info("inserting a person");
+		InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person id not found");
+		
 		return personRepository.save(person);
 	}
 
 	public Person update(Person person) throws InvalidPersonIdException {
+		logger.info("updating person ");
 		Optional<Person> personOptional = personRepository.findById(person.getId());
+		
 		if (!personOptional.isPresent()) {
+			InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person id not found");
+			logger.warn(invalidPersonIdException);
 			throw new InvalidPersonIdException();
 		}
+		logger.info("person updated " + "is" + person.getFirstname() + " " + person.getLastname());
 		return personRepository.save(person);
 	}
 
 	public Person delete(int id) throws InvalidPersonIdException {
+		logger.info("deleting person with id " + id);
 		Optional<Person> personOptional = personRepository.findById(id);
+		
 		if (!personOptional.isPresent()) {
+			InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person id not found");
+			logger.warn(invalidPersonIdException);
 			throw new InvalidPersonIdException();
 		}
 		Person person = personOptional.get();
 		personRepository.deleteById(id);
+		logger.info("person deleted " + "is with id " + id + " " + person.getFirstname() + " " + person.getLastname());
 		return person;
 	}
 }

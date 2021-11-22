@@ -27,29 +27,41 @@ public class PersonController {
 
 	@GetMapping("/{id}")
 	public Person find(@PathVariable int id) throws InvalidPersonIdException {
-		logger.info("Finding a person with id:" + id);
+		logger.info("finding a person with id " + id);
 		Person person = personService.findById(id);
-		logger.debug("Found person is" + person.getFirstname() + " " + person.getLastname());
+		logger.info("person found with id " + id + " is" + person.getFirstname() + " " + person.getLastname());
 		return personService.findById(id);
+
 	}
 
 	@GetMapping()
 	public List<Person> findAll() {
+		logger.info("finding all persons");
+		System.out.println("data not found");
 		return personService.findAll();
+
 	}
 
 	@PostMapping()
 	public Person insertPerson(@RequestBody Person person) {
+		logger.info("inserting a person with " + person.getFirstname() + " " + person.getLastname());
+		System.out.println("data not found" + person);
 		return personService.insert(person);
+
 	}
 
-	@PutMapping(" ")
+	@PutMapping()
 	public Person edit(@RequestBody Person person) throws InvalidPersonIdException {
+		logger.info("editing a person with " + person.getFirstname() + " " + person.getLastname());
+		System.out.println("data not found" + person);
 		return personService.update(person);
 	}
 
 	@DeleteMapping("/{id}")
 	public Person delete(@PathVariable int id) throws InvalidPersonIdException {
+		logger.info("deleting a person with id " + id);
+		System.out.println("data not found" + id);
 		return personService.delete(id);
 	}
+
 }
