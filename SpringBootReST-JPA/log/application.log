@@ -15,3 +15,31 @@
 22-11-2021 19:20:20WARN  com.cov.service.PersonService:44 - com.cov.exception.InvalidPersonIdException: Person id not found
 22-11-2021 19:21:53INFO  com.cov.controller.PersonController:47 - inserting a person with gopala raju jampana
 22-11-2021 19:21:53INFO  com.cov.service.PersonService:42 - inserting a person
+23-11-2021 12:49:22INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 12:49:22INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 12:57:50INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 12:57:50INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 12:57:50INFO  com.cov.service.PersonService:45 - inserting a person
+23-11-2021 13:01:04INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 13:01:04INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 16:08:24INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 16:08:24INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 16:59:02INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 16:59:02INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 17:09:43INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 17:09:43INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 17:10:47INFO  com.cov.controller.PersonController:30 - finding a person with id 56
+23-11-2021 17:10:47INFO  com.cov.service.PersonService:28 - finding person with id: 56
+23-11-2021 17:10:47WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person id not found
+23-11-2021 17:10:58INFO  com.cov.controller.PersonController:39 - finding all persons
+23-11-2021 17:10:58INFO  com.cov.service.PersonService:22 - finding all persons
+23-11-2021 17:11:10INFO  com.cov.controller.PersonController:30 - finding a person with id 55
+23-11-2021 17:11:10INFO  com.cov.service.PersonService:28 - finding person with id: 55
+23-11-2021 17:11:10WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person id not found
+23-11-2021 17:16:06INFO  com.cov.controller.PersonController:30 - finding a person with id 55
+23-11-2021 17:16:06INFO  com.cov.service.PersonService:28 - finding person with id: 55
+23-11-2021 17:16:06WARN  com.cov.service.PersonService:33 - com.cov.exception.InvalidPersonIdException: Person id not found
+23-11-2021 17:16:06INFO  com.cov.exception.GlobalException:21 - status404 NOT_FOUND
+23-11-2021 17:16:06INFO  com.cov.exception.GlobalException:22 - messagePerson id not found
+23-11-2021 17:19:45INFO  com.cov.controller.PersonController:39 - finding all persons
+23-11-2021 17:19:45INFO  com.cov.service.PersonService:22 - finding all persons
