@@ -12,16 +12,18 @@ import com.cov.exception.InvalidPersonIdException;
 import com.cov.repo.PersonRepository;
 
 @Service
-public class PersonService {
+public class PersonService implements IPersonService {
 	Logger logger = Logger.getLogger(PersonService.class);
 	@Autowired
 	PersonRepository personRepository;
 
+	@Override
 	public List<Person> findAll() {
 		logger.info("finding all persons");
 		return personRepository.findAll();
 	}
 
+	@Override
 	public Person findById(int id) throws InvalidPersonIdException {
 		logger.info("finding person with id: " + id);
 		Optional<Person> personOptional = personRepository.findById(id);
@@ -38,6 +40,7 @@ public class PersonService {
 		return person;
 	}
 
+	@Override
 	public Person insert(Person person) {
 		logger.info("inserting a person");
 		InvalidPersonIdException invalidPersonIdException = new InvalidPersonIdException("Person id not found");
@@ -45,6 +48,7 @@ public class PersonService {
 		return personRepository.save(person);
 	}
 
+	@Override
 	public Person update(Person person) throws InvalidPersonIdException {
 		logger.info("updating person ");
 		Optional<Person> personOptional = personRepository.findById(person.getId());
@@ -58,6 +62,7 @@ public class PersonService {
 		return personRepository.save(person);
 	}
 
+	@Override
 	public Person delete(int id) throws InvalidPersonIdException {
 		logger.info("deleting person with id " + id);
 		Optional<Person> personOptional = personRepository.findById(id);

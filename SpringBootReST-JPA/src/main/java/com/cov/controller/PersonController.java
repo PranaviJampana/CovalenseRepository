@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.cov.beans.Person;
 import com.cov.exception.InvalidPersonIdException;
-import com.cov.service.PersonService;
+import com.cov.service.IPersonService;
 
 @RestController
 @RequestMapping("/person")
@@ -23,7 +23,7 @@ public class PersonController {
 	static Logger logger = Logger.getLogger(PersonController.class);
 
 	@Autowired
-	PersonService personService;
+	IPersonService personService;
 
 	@GetMapping("/{id}")
 	public Person find(@PathVariable int id) throws InvalidPersonIdException {
