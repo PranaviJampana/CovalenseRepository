@@ -1,0 +1,71 @@
+22-11-2021 21:31:41INFO  com.cov.controller.EmployeeController:39 - finding all persons
+22-11-2021 21:31:41INFO  com.cov.service.DepartmentService:23 - finding all employees
+22-11-2021 21:32:08INFO  com.cov.controller.DepartmentController:39 - finding all departments
+22-11-2021 21:32:08INFO  com.cov.service.DepartmentService:21 - finding all departments
+22-11-2021 21:32:46INFO  com.cov.controller.DepartmentController:46 - inserting a department with null
+22-11-2021 21:32:46INFO  com.cov.service.DepartmentService:42 - inserting a person
+22-11-2021 21:36:08INFO  com.cov.controller.DepartmentController:39 - finding all departments
+22-11-2021 21:36:08INFO  com.cov.service.DepartmentService:21 - finding all departments
+22-11-2021 21:37:31INFO  com.cov.controller.DepartmentController:30 - finding a department with id 1
+22-11-2021 21:37:31INFO  com.cov.service.DepartmentService:26 - finding person with id: 1
+22-11-2021 21:37:31INFO  com.cov.service.DepartmentService:37 - department found with id 1isBRM
+22-11-2021 21:37:31INFO  com.cov.controller.DepartmentController:32 - department found with id 1 isBRM
+22-11-2021 21:37:31INFO  com.cov.service.DepartmentService:26 - finding person with id: 1
+22-11-2021 21:37:31INFO  com.cov.service.DepartmentService:37 - department found with id 1isBRM
+23-11-2021 09:54:03INFO  com.cov.controller.DepartmentController:30 - finding a department with id 1
+23-11-2021 09:54:03INFO  com.cov.service.DepartmentService:26 - finding person with id: 1
+23-11-2021 09:54:03INFO  com.cov.service.DepartmentService:37 - department found with id 1isBRM
+23-11-2021 09:54:03INFO  com.cov.controller.DepartmentController:32 - department found with id 1 isBRM
+23-11-2021 09:54:03INFO  com.cov.service.DepartmentService:26 - finding person with id: 1
+23-11-2021 09:54:03INFO  com.cov.service.DepartmentService:37 - department found with id 1isBRM
+23-11-2021 10:06:47INFO  com.cov.controller.DepartmentController:30 - finding a department with id 1
+23-11-2021 10:06:47INFO  com.cov.service.DepartmentService:26 - finding person with id: 1
+23-11-2021 10:06:47INFO  com.cov.service.DepartmentService:37 - department found with id 1isBRM
+23-11-2021 10:06:47INFO  com.cov.controller.DepartmentController:32 - department found with id 1 isBRM
+23-11-2021 17:25:27INFO  com.cov.controller.EmployeeController:39 - finding all employees
+23-11-2021 17:25:27INFO  com.cov.service.DepartmentService:23 - finding all employees
+23-11-2021 17:26:01INFO  com.cov.controller.EmployeeController:39 - finding all employees
+23-11-2021 17:26:01INFO  com.cov.service.DepartmentService:23 - finding all employees
+23-11-2021 17:26:24INFO  com.cov.controller.EmployeeController:30 - finding a employee with id 6
+23-11-2021 17:26:24INFO  com.cov.service.DepartmentService:30 - finding person with id: 6
+23-11-2021 17:26:24INFO  com.cov.service.DepartmentService:41 - department found with id 6isjyothi
+23-11-2021 17:26:24INFO  com.cov.controller.EmployeeController:32 - employee found with id 6 isjyothi
+23-11-2021 17:48:26INFO  com.cov.controller.DepartmentController:39 - finding all departments
+23-11-2021 17:48:26INFO  com.cov.service.DepartmentService:21 - finding all departments
+23-11-2021 17:48:43INFO  com.cov.controller.EmployeeController:30 - finding a employee with id 2
+23-11-2021 17:48:43INFO  com.cov.service.DepartmentService:30 - finding person with id: 2
+23-11-2021 17:48:43WARN  com.cov.service.DepartmentService:35 - com.cov.exception.InvalidEmployeeIdException: employee id not found
+23-11-2021 17:48:54INFO  com.cov.controller.EmployeeController:39 - finding all employees
+23-11-2021 17:48:54INFO  com.cov.service.DepartmentService:23 - finding all employees
+23-11-2021 17:51:02INFO  com.cov.controller.EmployeeController:39 - finding all employees
+23-11-2021 17:51:02INFO  com.cov.service.EmployeeService:23 - finding all employees
+23-11-2021 17:51:11INFO  com.cov.controller.EmployeeController:30 - finding a employee with id 2
+23-11-2021 17:51:11INFO  com.cov.service.EmployeeService:30 - finding person with id: 2
+23-11-2021 17:51:11WARN  com.cov.service.EmployeeService:35 - com.cov.exception.InvalidEmployeeIdException: employee id not found
+23-11-2021 17:53:56INFO  com.cov.controller.EmployeeController:47 - inserting a employee with gopala raju
+23-11-2021 17:53:56INFO  com.cov.service.EmployeeService:47 - inserting a employee
+23-11-2021 17:55:45INFO  com.cov.controller.EmployeeController:47 - inserting a employee with gopala raju
+23-11-2021 17:55:45INFO  com.cov.service.EmployeeService:47 - inserting a employee
+24-11-2021 10:16:51INFO  com.cov.controller.DepartmentController:46 - inserting a department with gopala raju
+24-11-2021 10:16:51INFO  com.cov.service.DepartmentService:42 - inserting a department
+24-11-2021 10:18:20INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 10:18:20INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:18:42INFO  com.cov.controller.DepartmentController:46 - inserting a department with gopala raju
+24-11-2021 10:18:42INFO  com.cov.service.DepartmentService:42 - inserting a department
+24-11-2021 10:19:31INFO  com.cov.controller.DepartmentController:46 - inserting a department with gopala raju
+24-11-2021 10:19:31INFO  com.cov.service.DepartmentService:42 - inserting a department
+24-11-2021 10:20:49INFO  com.cov.controller.DepartmentController:54 - editing a department with gopala raju jampana
+24-11-2021 10:20:49INFO  com.cov.service.DepartmentService:49 - updating department 
+24-11-2021 10:20:49INFO  com.cov.service.DepartmentService:57 - department updated isgopala raju jampana
+24-11-2021 10:41:28INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:41:28INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:45:33INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:45:33INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:48:07INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:48:07INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:51:46INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 10:51:46INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:04:36INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:04:36INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:16:27INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:16:27INFO  com.cov.service.EmployeeService:23 - finding all employees
