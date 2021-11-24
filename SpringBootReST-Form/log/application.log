@@ -136,3 +136,9 @@
 24-11-2021 13:19:30INFO  com.cov.service.DepartmentService:22 - finding all departments
 24-11-2021 13:23:59INFO  com.cov.controller.DepartmentController:39 - finding all departments
 24-11-2021 13:23:59INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 13:26:10INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 13:26:10INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 13:26:24INFO  com.cov.controller.DepartmentController:30 - finding a department with id 20
+24-11-2021 13:26:24INFO  com.cov.service.DepartmentService:26 - finding person with id: 20
+24-11-2021 13:26:24INFO  com.cov.service.DepartmentService:38 - department found with id 20isgopala raju
+24-11-2021 13:26:24INFO  com.cov.controller.DepartmentController:32 - department found with id 20 isgopala raju
