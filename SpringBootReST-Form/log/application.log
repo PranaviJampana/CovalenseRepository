@@ -69,3 +69,70 @@
 24-11-2021 12:04:36INFO  com.cov.service.EmployeeService:23 - finding all employees
 24-11-2021 12:16:27INFO  com.cov.service.EmployeeService:23 - finding all employees
 24-11-2021 12:16:27INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:29:51INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 12:29:51INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:30:19INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 12:30:19INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:30:28INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:30:28INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:30:42INFO  com.cov.controller.DepartmentController:30 - finding a department with id 22
+24-11-2021 12:30:42INFO  com.cov.service.DepartmentService:26 - finding person with id: 22
+24-11-2021 12:30:42INFO  com.cov.service.DepartmentService:37 - department found with id 22isgopala raju jampana
+24-11-2021 12:30:42INFO  com.cov.controller.DepartmentController:32 - department found with id 22 isgopala raju jampana
+24-11-2021 12:31:05INFO  com.cov.controller.DepartmentController:61 - deleting a department with id 22
+24-11-2021 12:31:05INFO  com.cov.service.DepartmentService:62 - deleting department with id 22
+24-11-2021 12:31:05INFO  com.cov.service.DepartmentService:72 - department deleted is with id 22 gopala raju jampana
+24-11-2021 12:31:15INFO  com.cov.controller.DepartmentController:30 - finding a department with id 22
+24-11-2021 12:31:15INFO  com.cov.service.DepartmentService:26 - finding person with id: 22
+24-11-2021 12:31:15WARN  com.cov.service.DepartmentService:31 - com.cov.exception.InvalidDepartmentIdException: department id not found
+24-11-2021 12:31:15INFO  com.cov.exception.GlobalExceptionHandlerDepartment:20 - status404 NOT_FOUND
+24-11-2021 12:31:15INFO  com.cov.exception.GlobalExceptionHandlerDepartment:21 - messagedepartment id not found
+24-11-2021 12:32:26INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:32:26INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:32:37INFO  com.cov.controller.DepartmentController:30 - finding a department with id 10
+24-11-2021 12:32:37INFO  com.cov.service.DepartmentService:26 - finding person with id: 10
+24-11-2021 12:32:37WARN  com.cov.service.DepartmentService:31 - com.cov.exception.InvalidDepartmentIdException: department id not found
+24-11-2021 12:32:37INFO  com.cov.exception.GlobalExceptionHandlerDepartment:20 - status404 NOT_FOUND
+24-11-2021 12:32:37INFO  com.cov.exception.GlobalExceptionHandlerDepartment:21 - messagedepartment id not found
+24-11-2021 12:37:25INFO  com.cov.controller.DepartmentController:30 - finding a department with id 20
+24-11-2021 12:37:25INFO  com.cov.service.DepartmentService:26 - finding person with id: 20
+24-11-2021 12:37:25INFO  com.cov.service.DepartmentService:37 - department found with id 20isgopala raju
+24-11-2021 12:37:25INFO  com.cov.controller.DepartmentController:32 - department found with id 20 isgopala raju
+24-11-2021 12:38:01INFO  com.cov.controller.DepartmentController:46 - inserting a department with gopala raju jampana
+24-11-2021 12:38:01INFO  com.cov.service.DepartmentService:42 - inserting a department
+24-11-2021 12:39:30INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 12:39:30INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:41:23INFO  com.cov.controller.EmployeeController:30 - finding a employee with id 9
+24-11-2021 12:41:23INFO  com.cov.service.EmployeeService:30 - finding person with id: 9
+24-11-2021 12:41:23INFO  com.cov.service.EmployeeService:41 - department found with id 9isgopii
+24-11-2021 12:41:23INFO  com.cov.controller.EmployeeController:32 - employee found with id 9 isgopii
+24-11-2021 12:55:44INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 12:55:44INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 12:55:56INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:55:56INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:57:01INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:57:01INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:57:22INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:57:22INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 12:58:08INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 12:58:08INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 13:02:18INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 13:02:18INFO  com.cov.service.EmployeeService:23 - finding all employees
+24-11-2021 13:12:08INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 13:12:08INFO  com.cov.service.EmployeeService:21 - finding all employees
+24-11-2021 13:12:21INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 13:12:21INFO  com.cov.service.DepartmentService:21 - finding all departments
+24-11-2021 13:12:34INFO  com.cov.controller.EmployeeController:39 - finding all employees
+24-11-2021 13:12:34INFO  com.cov.service.EmployeeService:21 - finding all employees
+24-11-2021 13:17:16INFO  com.cov.controller.EmployeeController:42 - finding all employees
+24-11-2021 13:17:16INFO  com.cov.service.EmployeeService:22 - finding all employees
+24-11-2021 13:18:55INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 13:18:55INFO  com.cov.service.DepartmentService:22 - finding all departments
+24-11-2021 13:19:14INFO  com.cov.controller.DepartmentController:30 - finding a department with id 20
+24-11-2021 13:19:14INFO  com.cov.service.DepartmentService:27 - finding person with id: 20
+24-11-2021 13:19:14INFO  com.cov.service.DepartmentService:38 - department found with id 20isgopala raju
+24-11-2021 13:19:14INFO  com.cov.controller.DepartmentController:32 - department found with id 20 isgopala raju
+24-11-2021 13:19:30INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 13:19:30INFO  com.cov.service.DepartmentService:22 - finding all departments
+24-11-2021 13:23:59INFO  com.cov.controller.DepartmentController:39 - finding all departments
+24-11-2021 13:23:59INFO  com.cov.service.DepartmentService:21 - finding all departments

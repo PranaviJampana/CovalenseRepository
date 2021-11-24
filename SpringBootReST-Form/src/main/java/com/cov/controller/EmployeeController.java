@@ -37,7 +37,7 @@ public class EmployeeController {
 	@GetMapping()
 	public List<Employee> findAll() {
 		logger.info("finding all employees");
-		
+
 		return employeeService.findAll();
 
 	}
@@ -45,7 +45,7 @@ public class EmployeeController {
 	@PostMapping()
 	public Employee insertPerson(@RequestBody Employee employee) {
 		logger.info("inserting a employee with " + employee.getName());
-		
+
 		return employeeService.save(employee);
 
 	}
@@ -53,15 +53,14 @@ public class EmployeeController {
 	@PutMapping()
 	public Employee edit(@RequestBody Employee employee) throws InvalidEmployeeIdException {
 		logger.info("editing a employee with " + employee.getName());
-		
+
 		return employeeService.update(employee);
 	}
 
 	@DeleteMapping("/{id}")
 	public Employee delete(@PathVariable int id) throws InvalidEmployeeIdException {
 		logger.info("deleting a employee with id " + id);
-		
+
 		return employeeService.delete(id);
 	}
-
 }

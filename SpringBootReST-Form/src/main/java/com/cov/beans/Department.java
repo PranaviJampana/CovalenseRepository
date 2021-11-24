@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Department {
 	@Id
@@ -25,6 +27,7 @@ public class Department {
 
 	}
 
+	@JsonIgnore
 	public Department(int id, String name) {
 		super();
 		this.id = id;

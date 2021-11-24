@@ -7,15 +7,18 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Employee {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	int id;
+
 	String name;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
-
+	@JsonIgnore
 	Department department;
 
 	public Employee(int id, String name, Department department) {
@@ -27,6 +30,10 @@ public class Employee {
 
 	public Employee() {
 		super();
+	}
+
+	public Employee(int id2, String name2, String string) {
+// TODO Auto-generated constructor stub
 	}
 
 	public int getId() {

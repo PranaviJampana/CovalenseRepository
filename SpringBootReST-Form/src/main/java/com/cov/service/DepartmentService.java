@@ -26,11 +26,12 @@ public class DepartmentService {
 		logger.info("finding person with id: " + id);
 		Optional<Department> departmentOptional = departmentRepository.findById(id);
 		if (!departmentOptional.isPresent()) {
-			
-			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException("department id not found");
+
+			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException(
+					"department id not found");
 			logger.warn(invalidDepartmentIdException);
 
-			throw  invalidDepartmentIdException;
+			throw invalidDepartmentIdException;
 
 		}
 		Department department = departmentOptional.get();
@@ -40,17 +41,19 @@ public class DepartmentService {
 
 	public Department save(Department department) {
 		logger.info("inserting a department");
-		InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException("department id not found");
-		
+		InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException(
+				"department id not found");
+
 		return departmentRepository.save(department);
 	}
 
 	public Department update(Department department) throws InvalidDepartmentIdException {
 		logger.info("updating department ");
 		Optional<Department> departmentOptional = departmentRepository.findById(department.getId());
-		
+
 		if (!departmentOptional.isPresent()) {
-			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException("department id not found");
+			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException(
+					"department id not found");
 			logger.warn(invalidDepartmentIdException);
 			throw invalidDepartmentIdException;
 		}
@@ -61,11 +64,12 @@ public class DepartmentService {
 	public Department delete(int id) throws InvalidDepartmentIdException {
 		logger.info("deleting department with id " + id);
 		Optional<Department> departmentOptional = departmentRepository.findById(id);
-		
+
 		if (!departmentOptional.isPresent()) {
-			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException("department id not found");
+			InvalidDepartmentIdException invalidDepartmentIdException = new InvalidDepartmentIdException(
+					"department id not found");
 			logger.warn(invalidDepartmentIdException);
-			throw  invalidDepartmentIdException;
+			throw invalidDepartmentIdException;
 		}
 		Department department = departmentOptional.get();
 		departmentRepository.deleteById(id);
