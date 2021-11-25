@@ -17,6 +17,11 @@ import com.cov.beans.Employee;
 import com.cov.exception.InvalidEmployeeIdException;
 import com.cov.service.EmployeeService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api(value = "API to perform the operations on the employee", description = "This API provides different "
+		+ "crud operations on the employee repository")
 @RestController
 @RequestMapping("/employee")
 public class EmployeeController {
@@ -25,6 +30,7 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 
+	@ApiOperation(value = "Search an employee based on ID")
 	@GetMapping("/{id}")
 	public Employee find(@PathVariable int id) throws InvalidEmployeeIdException {
 		logger.info("finding a employee with id " + id);
@@ -34,6 +40,7 @@ public class EmployeeController {
 
 	}
 
+	@ApiOperation(value = "listing all the employee details")
 	@GetMapping()
 	public List<Employee> findAll() {
 		logger.info("finding all employees");
@@ -42,6 +49,7 @@ public class EmployeeController {
 
 	}
 
+	@ApiOperation(value = "inserting a new employee details ")
 	@PostMapping()
 	public Employee insertPerson(@RequestBody Employee employee) {
 		logger.info("inserting a employee with " + employee.getName());
@@ -50,6 +58,7 @@ public class EmployeeController {
 
 	}
 
+	@ApiOperation(value = "editing the existing employee details")
 	@PutMapping()
 	public Employee edit(@RequestBody Employee employee) throws InvalidEmployeeIdException {
 		logger.info("editing a employee with " + employee.getName());
@@ -57,6 +66,7 @@ public class EmployeeController {
 		return employeeService.update(employee);
 	}
 
+	@ApiOperation(value = "deleting an employee details")
 	@DeleteMapping("/{id}")
 	public Employee delete(@PathVariable int id) throws InvalidEmployeeIdException {
 		logger.info("deleting a employee with id " + id);

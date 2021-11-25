@@ -17,6 +17,12 @@ import com.cov.beans.Department;
 import com.cov.exception.InvalidDepartmentIdException;
 import com.cov.service.DepartmentService;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
+@Api(value = "API to perform operations in Department", description = "This API provides the capability to perform "
+		+ "different crud operations on Department repository")
+
 @RestController
 @RequestMapping("/department")
 public class DepartmentController {
@@ -25,6 +31,7 @@ public class DepartmentController {
 	@Autowired
 	DepartmentService departmentService;
 
+	@ApiOperation(value = "Search a Sigle department base don ID")
 	@GetMapping("/{id}")
 	public Department find(@PathVariable int id) throws InvalidDepartmentIdException {
 		logger.info("finding a department with id " + id);
@@ -34,6 +41,7 @@ public class DepartmentController {
 
 	}
 
+	@ApiOperation(value = "Show the list of all the departments" + " that are there in the database")
 	@GetMapping()
 	public List<Department> findAll() {
 		logger.info("finding all departments");
@@ -41,6 +49,7 @@ public class DepartmentController {
 
 	}
 
+	@ApiOperation(value = "Inserting a department ")
 	@PostMapping()
 	public Department insertPerson(@RequestBody Department department) {
 		logger.info("inserting a department with " + department.getName());
@@ -49,6 +58,7 @@ public class DepartmentController {
 
 	}
 
+	@ApiOperation(value = "performing edit operation on the department")
 	@PutMapping()
 	public Department edit(@RequestBody Department department) throws InvalidDepartmentIdException {
 		logger.info("editing a department with " + department.getName());
@@ -56,6 +66,7 @@ public class DepartmentController {
 		return departmentService.update(department);
 	}
 
+	@ApiOperation(value = "performing delete operation on the available departments")
 	@DeleteMapping("/{id}")
 	public Department delete(@PathVariable int id) throws InvalidDepartmentIdException {
 		logger.info("deleting a department with id " + id);
