@@ -19,6 +19,8 @@ import com.cov.service.DepartmentService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 @Api(value = "API to perform operations in Department", description = "This API provides the capability to perform "
 		+ "different crud operations on Department repository")
@@ -41,11 +43,19 @@ public class DepartmentController {
 
 	}
 
-	@ApiOperation(value = "Show the list of all the departments" + " that are there in the database")
+	@ApiOperation(value = "Show the list of all the departments",produces = "Application.xml")
+	@ApiResponses(value= {
+			@ApiResponse(code =200,message ="Successfully retrieved list of departments" ),
+			@ApiResponse(code =401,message ="You are not authorized to view the Repository" ),
+			@ApiResponse(code =403,message ="Accessing the resources you are trying to reach is forbidden" ),
+			@ApiResponse(code =404,message ="The resource you were trying to reach is not found" )
+			})
+	
 	@GetMapping()
 	public List<Department> findAll() {
 		logger.info("finding all departments");
 		return departmentService.findAll();
+		
 
 	}
 

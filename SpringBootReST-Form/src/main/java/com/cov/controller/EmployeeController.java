@@ -19,6 +19,8 @@ import com.cov.service.EmployeeService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 
 @Api(value = "API to perform the operations on the employee", description = "This API provides different "
 		+ "crud operations on the employee repository")
@@ -40,7 +42,13 @@ public class EmployeeController {
 
 	}
 
-	@ApiOperation(value = "listing all the employee details")
+	@ApiOperation(value = "listing all the employee details",produces = "Application/xml")
+	@ApiResponses(value= {
+			@ApiResponse(code =200,message ="Successfully retrieved list of departments" ),
+			@ApiResponse(code =401,message ="You are not authorized to view the Repository" ),
+			@ApiResponse(code =403,message ="Accessing the resources you are trying to reach is forbidden" ),
+			@ApiResponse(code =404,message ="The resource you were trying to reach is not found" )
+			})
 	@GetMapping()
 	public List<Employee> findAll() {
 		logger.info("finding all employees");
